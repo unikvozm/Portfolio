@@ -1,5 +1,5 @@
 // toggle the education list
-let edu = document.querySelector(".education__h2");
+let edu = document.querySelector(".education__header");
 let eduContainer = document.querySelector(".education__container");
 
 edu.addEventListener("click", function() {
@@ -10,6 +10,23 @@ edu.addEventListener("click", function() {
     eduContainer.style.maxHeight = eduContainer.scrollHeight + "px";
   }
 });
+
+// toggle project's description
+let desc = document.querySelectorAll(".projects__project-btn");
+let descWrap = document.querySelectorAll(".projects__project-wrapper");
+
+for (let i = 0; i < desc.length; i++) {
+  desc[i].addEventListener("click", function() {
+    this.classList.add("open-desc");
+    if (descWrap[i].style.display === 'block') {
+      descWrap[i].style.maxHeight = null;
+      descWrap[i].style.display = "none";
+    } else {
+      descWrap[i].style.display = "block";
+      descWrap[i].style.maxHeight = descWrap[i].scrollHeight + "px";
+    }
+  });
+}
 
 // project slider
 let projects = document.querySelectorAll(".projects__project");
