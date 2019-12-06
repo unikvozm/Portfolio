@@ -139,31 +139,31 @@ table {
   font-style: normal;
   font-weight: normal;
   font-family: "FuturaDemiC";
-  src: url("../../assets/fonts/FuturaDemiC/FuturaDemiC.woff2") format("woff2"), url("../../assets/fonts/FuturaDemiC/FuturaDemiC.woff") format("woff"), url("../../assets/fonts/FuturaDemiC/FuturaDemiC.ttf") format("truetype");
+  src: url("../assets/fonts/FuturaDemiC/FuturaDemiC.woff2") format("woff2"), url("../assets/fonts/FuturaDemiC/FuturaDemiC.woff") format("woff"), url("../assets/fonts/FuturaDemiC/FuturaDemiC.ttf") format("truetype");
 }
 @font-face {
   font-style: normal;
   font-weight: normal;
   font-family: "FuturaBookC";
-  src: url("../../assets/fonts/FuturaBookC/FuturaBookC.woff2") format("woff2"), url("../../assets/fonts/FuturaBookC/FuturaBookC.woff") format("woff"), url("../../assets/fonts/FuturaBookC/FuturaBookC.ttf") format("truetype");
+  src: url("../assets/fonts/FuturaBookC/FuturaBookC.woff2") format("woff2"), url("../assets/fonts/FuturaBookC/FuturaBookC.woff") format("woff"), url("../assets/fonts/FuturaBookC/FuturaBookC.ttf") format("truetype");
 }
 @font-face {
   font-style: normal;
   font-weight: normal;
   font-family: "Yeseva One";
-  src: url("../../assets/fonts/Yeseva One/YesevaOne-Regular.woff2") format("woff2"), url("../../assets/fonts/Yeseva One/YesevaOne-Regular.woff") format("woff"), url("../../assets/fonts/Yeseva One/YesevaOne-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/Yeseva One/YesevaOne-Regular.woff2") format("woff2"), url("../assets/fonts/Yeseva One/YesevaOne-Regular.woff") format("woff"), url("../assets/fonts/Yeseva One/YesevaOne-Regular.ttf") format("truetype");
 }
 @font-face {
   font-style: normal;
   font-weight: normal;
   font-family: "Proxima Nova";
-  src: url("../../assets/fonts/Proxima Nova/ProximaNova-Regular.woff2") format("woff2"), url("../../assets/fonts/Proxima Nova/ProximaNova-Regular.woff") format("woff"), url("../../assets/fonts/Proxima Nova/ProximaNova-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/Proxima Nova/ProximaNova-Regular.woff2") format("woff2"), url("../assets/fonts/Proxima Nova/ProximaNova-Regular.woff") format("woff"), url("../assets/fonts/Proxima Nova/ProximaNova-Regular.ttf") format("truetype");
 }
 @font-face {
   font-style: normal;
   font-weight: normal;
   font-family: "FuturaMediumC";
-  src: url("../../assets/fonts/FuturaMediumC/FuturaMediumC.woff2") format("woff2"), url("../../assets/fonts/FuturaMediumC/FuturaMediumC.woff") format("woff"), url("../../assets/fonts/FuturaMediumC/FuturaMediumC.ttf") format("truetype");
+  src: url("../assets/fonts/FuturaMediumC/FuturaMediumC.woff2") format("woff2"), url("../assets/fonts/FuturaMediumC/FuturaMediumC.woff") format("woff"), url("../assets/fonts/FuturaMediumC/FuturaMediumC.ttf") format("truetype");
 }
 .header {
   display: flex;
@@ -305,7 +305,7 @@ table {
   left: 5.6944444444vw;
   width: 94.1666666667vw;
   height: 100%;
-  background-image: url("../../assets/images/Group 7.png");
+  background-image: url("../assets/images/Group 7.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1135,7 +1135,7 @@ table {
 .measurement__stages {
   width: 55.5555555556vw;
   height: 44.7916666667vw;
-  background-image: url("../../assets/images/building.png");
+  background-image: url("../assets/images/building.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1292,7 +1292,7 @@ table {
   align-content: center;
   width: 100%;
   height: 60vw;
-  background-image: url("../../assets/images/styles.png");
+  background-image: url("../assets/images/styles.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1967,6 +1967,7 @@ table {
 @media screen and (max-width: 600px) {
   .team {
     background: #131313;
+    position: relative;
   }
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -2246,7 +2247,7 @@ table {
 
 .clients {
   width: 100%;
-  background-image: url("../../assets/images/clients.png");
+  background-image: url("../assets/images/clients.png");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
@@ -2427,7 +2428,7 @@ table {
 
 .contact {
   width: 100%;
-  background-image: url("./../../assets/images/contact-section.png");
+  background-image: url("./../assets/images/contact-section.png");
   background-repeat: no-repeat;
   background-size: cover;
 }

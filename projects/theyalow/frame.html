@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=DM+Serif+Display"
+      rel="stylesheet"
+    />
+    <title>THEYALOW</title>
+  </head>
+  <body>
+    <iframe src="./index.html" frameborder="0" class='mobile'></iframe>
+    <div class="buttons">
+      <button class="button" id="size-btn">
+        Desktop
+      </button>
+      <button class="button">
+        <a href="../../index.html">Back</a>
+      </button>
+    </div>
+
+    <style>
+      body {
+		width: 100%;
+		display: flex;
+        margin: 0;
+        background: #cccccc;
+	  }
+	  
+      iframe {
+        width: 1200px;
+		height: 100vh;
+		box-sizing: border-box;
+		margin: 0 auto;
+	  }
+	  
+      iframe.mobile {
+        width: 640px;
+        margin: 0 auto;
+	  }
+	  
+      .buttons {
+        position: fixed;
+        bottom: 5%;
+        right: 2%;
+        width: 10%;
+      }
+      .button {
+        display: block;
+        width: 100%;
+        border-radius: 20%;
+        margin-top: 10%;
+        font-family: "DM Serif Display", serif;
+        font-size: 2vw;
+      }
+
+      .button a {
+        text-decoration: none;
+        color: black;
+      }
+
+      @media (max-width: 800px) {
+        .button:first-child {
+          display: none;
+        }
+      }
+    </style>
+    <script>
+      const iframe = document.querySelector("iframe");
+      const sizeBtn = document.querySelector("#size-btn");
+
+      sizeBtn.addEventListener("click", () => {
+        iframe.classList.toggle("mobile");
+        sizeBtn.innerHTML =
+          sizeBtn.innerHTML === "Mobile" ? "Desktop" : "Mobile";
+      });
+    </script>
+  </body>
+</html>

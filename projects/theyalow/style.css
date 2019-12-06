@@ -82,6 +82,7 @@ body {
   width: 1300px;
   height: 1847px;
   margin: 0 auto;
+  background: white;
 }
 
 .wrapper {
@@ -704,7 +705,7 @@ h4 {
   letter-spacing: 0.2px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
   body {
     width: 640px;
     height: 1553px;
