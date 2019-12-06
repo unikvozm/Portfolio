@@ -748,7 +748,7 @@ table {
 @media screen and (max-width: 600px) {
   .projects__slider-prev {
     left: 10%;
-    display: inline;
+    display: block;
     width: 9.6vw;
     height: 9.6vw;
     padding: 3.3386666667vw 3.7573333333vw;
@@ -1471,7 +1471,7 @@ table {
 @media screen and (max-width: 600px) {
   .styles__slider-prev {
     left: 10%;
-    display: inline;
+    display: block;
     width: 9.6vw;
     height: 9.6vw;
     padding: 3.3386666667vw 3.7573333333vw;

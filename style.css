@@ -119,20 +119,30 @@ main {
 
 .projects__project-btn {
   display: none;
+  position: absolute;
   width: 5vw;
   height: 5vw;
   border-radius: 50%;
-  margin-bottom: 5%;
+  left: 20%;
+  top: 20px;
 }
 
 .projects__project-btn:before {
   content: "Show description";
   position: absolute;
-  left: -600%;
+  left: -900%;
+  top: 0;
+  font-family: "Philosopher", sans-serif;
+  font-size: 5vw;
 }
 
+
 .open-desc:before {
+  position: absolute;
   content: "Hide description";
+  font-family: "Philosopher", sans-serif;
+  font-size: 5vw;
+  top: 0;
 }
 
 .projects__project-click {
@@ -206,6 +216,10 @@ color: gray;
   right: -40%;
 }
 
+.projects__project-swipe-text {
+  display: none;
+}
+
 .to-left {
   animation-name: left;
 }
@@ -276,6 +290,8 @@ color: gray;
 
   .projects__project-link {
     width: 100%;
+    margin: 10vh auto;
+
   }
 
   .projects__project-click {
@@ -284,16 +300,39 @@ color: gray;
 
   .projects__carousel {
     flex-direction: column;
+    height: 50vh;
+    overflow: hidden;
   }
   
   .projects__project-btn {
     display: block;
-    position: static;
+    position: absolute;
+    top: 2%;
+    left: 50%;
   }
  
   .projects__project-wrapper {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    border-radius: 10%;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease-out;
+  }
+
+  .projects__project-wrapper--opened {
+    background: white;
+    border: 10px solid white;
+  }
+
+  .projects__project-swipe-text {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 45vh;
+    background: white;
+    padding: 2%;
+    text-align: center;
   }
 }

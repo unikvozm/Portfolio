@@ -17,13 +17,15 @@ let descWrap = document.querySelectorAll(".projects__project-wrapper");
 
 for (let i = 0; i < desc.length; i++) {
   desc[i].addEventListener("click", function() {
-    this.classList.add("open-desc");
+    this.classList.toggle("open-desc");
+    descWrap[i].classList.toggle("projects__project-wrapper--opened");
     if (descWrap[i].style.display === 'block') {
       descWrap[i].style.maxHeight = null;
       descWrap[i].style.display = "none";
     } else {
       descWrap[i].style.display = "block";
       descWrap[i].style.maxHeight = descWrap[i].scrollHeight + "px";
+
     }
   });
 }
